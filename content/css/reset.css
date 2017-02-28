@@ -65,7 +65,7 @@ br {
 
 
 body{
-  font-family: Segoe UI;
+  font-family: Segoe UI, sans-serif;
   list-style: none;
   width: 100%;
 }
