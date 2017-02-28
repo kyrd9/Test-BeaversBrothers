@@ -1,0 +1,63 @@
+.header{
+  width: 100%;
+}
+
+.header ul{
+  list-style: none;
+}
+.logo li{
+  float: left;
+}
+
+.logo h1{
+  font-size: 44.29px;
+  margin: 50px 0px 0px 0px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.logo p{
+  font-size: 20px;
+}
+
+.right-header h3{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.right-header{
+  float: right;
+}
+
+.right-header li{
+  display: inline;
+  float: left;
+  margin-top: 70px;
+}
+
+.right-header h3{
+  margin-left: 30px;
+  color: #0064aa;
+}
+.right-header h3:nth-child(1){
+  margin-right: 70px;
+}
+
+.right-header img{
+  margin:-5px 0px 0px 20px;
+}
+
+.header:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.main-title{
+  margin-top: 50px;
+  font-size: 122px;
+  color: black;
+  font-weight: 100;
+  width: 100%;
+}

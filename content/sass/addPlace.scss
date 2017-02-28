@@ -1,0 +1,83 @@
+.addPlaces{
+  position: absolute;
+  float: left;
+  margin: 10px 600px 0px 0px;
+  max-height: 330px;
+  max-width: 330px;
+  background: #eeeeee;
+  right: 0;
+}
+
+.addPlaces:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.addPlaces.active{
+  float: left;
+  position: relative;
+  top:10px;
+  margin:0;
+}
+
+.addPlace img{
+  opacity: 1;
+  margin: 20px 0px 0px 40px;
+}
+
+.addPlace h1{
+  opacity: 1;
+  font-size: 36px;
+  text-align: left;
+  font-weight: lighter;
+  margin: 20px 0px 0px 40px;
+}
+
+.addPlace button{
+  margin:20px 0px 0px 30px;
+  background: #8bc02e;
+  padding: 10px 45px 15px 45px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+  border-top: 5px solid  #a7e639;
+  box-shadow: 0px 0px 1px 1px black;
+  font-size: 24px;
+}
+
+.addPlace-button{
+  margin:20px 0px 0px 30px;
+  background: #8bc02e;
+  padding: 12px 45px 15px 45px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+  border-top: 5px solid  #a7e639;
+  box-shadow: 0px 0px 1px 1px black;
+  font-size: 24px;
+  position: relative;
+  left: -15px;
+  top:-3px;
+}
+
+.addPlaces-form{
+  z-index: -1;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  top:-265px;
+}
+
+.addPlaces-form.active{
+  opacity: 1;
+  z-index: 200;
+}
+
+.addPlace h1.active{
+  opacity:0;
+}
+
+.addPlace img.active{
+opacity: 0;
+}

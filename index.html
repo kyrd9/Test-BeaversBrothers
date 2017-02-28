@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="myGuideApp">
+  <head>
+    <title>Microsoft Developer Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+   <!-- <link href="content\css\styles.css" rel="stylesheet" type="text/css" />
+    <link href="content\css\reset.css" rel="stylesheet" type="text/css" />-->
+    <script src="app\lib\angular.min.js"></script>
+    <script src="app\lib\angular-animate.min.js"></script>
+    <script src="app\app.js"></script>
+    <script src="app\lib\jquery-3.1.1.min.js"></script>
+    <script src="app\script.js"></script>
+  <!-- <script src="build\scripts.js"></script>-->
+    <link href="build\styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+  <div class="header">
+    <div class="wrapper">
+<ul class="logo">
+      <li>
+      <h1>Microsoft Developer Tour</h1>
+      <p>Технологическая экспедиция</p></li>
+</ul>
+
+<div class="right-header">
+<ul>
+    <li ><a href="#"><h3>Об экспедиции</h3></a></li>
+    <li ><a href="#"><h3>Новости</h3></a></li>
+    <li><a href="#"> <img src="content\img\fb-icon.png" /></a></li>
+    <li><a href="#"> <img src="content\img\tw-icon.png" /></a></li>
+    <li><a href="#"> <img src="content\img\vc-icon.png" /></a></li>
+    </ul>
+  </div>
+    </div>
+    </div>
+
+<div class="wrapper">
+  <h1 class="main-title">Путеводитель</h1>
+</div>
+<div class="wrapper">
+  <h3 class="city-menu">Выберите <span>город</span></h3>
+<div class="cities">
+
+  <ul>
+  <li><a href="#">Минск</a></li>
+  <li><a href="#">Нижний Новгород</a></li>
+  <li><a href="#">Новосибирск</a></li>
+  <li><a href="#">Пермь</a></li>
+  <li><a href="#">Ростов-на-Дону</a></li>
+  <li><a href="#">Санкт-Петербург</a></li>
+  <li><a href="#">Самара</a></li>
+  <li><a href="#">Казань</a></li>
+  <li><a href="#">Таганрог</a></li>
+</ul>
+<ul>
+  <li><a href="#">Минск</a></li>
+  <li><a href="#">Нижний Новгород</a></li>
+  <li><a href="#">Новосибирск</a></li>
+  <li><a href="#">Пермь</a></li>
+  <li><a href="#">Ростов-на-Дону</a></li>
+  <li><a href="#">Санкт-Петербург</a></li>
+  <li><a href="#">Самара</a></li>
+  <li><a href="#">Казань</a></li>
+  <li><a href="#">Таганрог</a></li>
+  </ul>
+  <ul>
+  </ul>
+  <li><a href="#">Минск</a></li>
+  <li><a href="#">Нижний Новгород</a></li>
+  <li><a href="#">Новосибирск</a></li>
+  <li><a href="#">Пермь</a></li>
+  <li><a href="#">Ростов-на-Дону</a></li>
+  </ul>
+  </div>
+</div>
+
+    <img class="bg-left" src="content/img/bg-left.png" />
+    <img class="bg-right" src="content/img/bg-right.png" />
+
+    <div ng-controller="PlaceController">
+<div class="wrapper">
+    <ul  class="places">
+      <li  ng-repeat="place in places" >
+        <div ng-click="showBlock = ! showBlock" class="crop">
+          <img  ng-src="{{place.img}}"
+        ng-show="place.img" />
+<div class="border-green">
+</div>
+        <h3 class="place-name">{{place.name}}</h3>
+        <div class="remove" ng-click="removePlace(place)">x</div>
+        <span class="city">{{place.city}}</span>
+      </div>
+
+
+<div class="check-element animate-show-hide" ng-show="showBlock">
+<div class="open-place">
+  <ul>
+    <li class="open-place-img">
+      <img ng-src="{{place.img}}"/>
+    </li>
+    <div class="open-place-info">
+    <li>
+      <h1>{{place.name}}</h1>
+      <h3>Клуб {{place.name}} - это самое сногшибательное место во всем городе
+      </h3>
+      <ul>
+        <li>
+            <img src="content\img\icon-comp.png" />
+            <a href="#">https://www.yandex.ru/</a>
+        </li>
+        <li>
+          <img src="content\img\place-icon.png" />
+        <a href="#">{{place.city}}</a>
+        </li>
+        <li>
+          <img src="content\img\person-icon.png" />
+        <p>Петров Петр</p>
+        </li>
+      </ul>
+    </li>
+      </div>
+  </ul>
+</div>
+      </li>
+    </ul>
+</div>
+
+
+
+<div class="wrapper">
+
+
+<div class="addPlaces">
+  <div class=addPlace>
+  <img src="content\img\man-and-flag.png" />
+  <h1>Добавьте <br/>свое место!</h1>
+  <button>Добавить место</button>
+</div>
+<div class="addPlaces-form">
+    <form ng-submit="addPlace()">
+      <input type="text" placeholder="Название" ng-model="newplace.name" />
+      <input type="text" placeholder="Город" ng-model="newplace.city" />
+      <input type="text" placeholder="Изображение (ссылка)" ng-model="newplace.img" />
+      <input class="addPlace-button" type="submit" value="Добавить место" />
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </body>
+
+
+
+
+
+</html>

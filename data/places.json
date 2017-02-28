@@ -1,0 +1,36 @@
+[{
+	"name": "Mr. Cat",
+	"city": "Астана",
+	"available": true,
+	"img": "content/img/img-astana.png"
+},
+ {
+	"name": "Челюскинцев",
+	"city": "Воронеж",
+	"available": true,
+	"img": "content/img/img-voroneg.png"
+},
+  {
+   "name": "Клуб полезного действия",
+   "city": "Санкт-Петербург",
+   "available": true,
+   "img": "content/img/img-peter.png"
+},
+  {
+  	"name": "Freelance Cafe",
+  	"city": "Екатеринбург",
+  	"available": true,
+  	"img": "content/img/img-ekb.png"
+},
+  {
+   	"name": "Лаборатория Касперского",
+   	"city": "Новосибирск",
+   	"available": true,
+   	"img": "content/img/img-novosibirsk.png"
+},
+  {
+	  "name": "IT-office",
+	  "city": "Кемерово",
+    "available": true,
+	  "img": "content/img/img-kemerovo.png"
+}]

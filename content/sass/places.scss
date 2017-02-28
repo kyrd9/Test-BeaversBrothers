@@ -1,0 +1,79 @@
+
+
+.crop{
+  float:left;
+  position: relative;
+  margin:10px 20px 10px 0px;
+  overflow:hidden;
+  border:1px solid #ccc;
+  width: 330px;
+  height:330px;
+  background: black;
+  cursor: pointer;
+}
+
+.crop img{
+  opacity: 0.6;
+  z-index: 50;
+}
+
+ .crop:after{
+  clear: both;
+  content:"";
+  display: block;
+}
+
+.crop:hover .border-green{
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  border-bottom: 80px solid #8bc02e;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.place-name{
+  position: absolute;
+  top: 260px;
+  font-size: 24px;
+  left: 20px;
+  color: #fff;
+  z-index: 10000;
+}
+
+
+.city{
+  font-size: 18px;
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  color: #fff;
+  z-index: 10000;
+}
+
+.places{
+  width:  75%;
+}
+
+.places li.ng-enter{
+  transition: 0.2s linear all;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.places li.ng-enter.ng-enter-active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.places li.ng-leave{
+  transition: 0.2s linear all;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.places li.ng-leave.ng-leave-active{
+  transform: translateX(-100%);
+  opacity: 0;
+}
